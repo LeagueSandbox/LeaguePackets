@@ -14,7 +14,7 @@ namespace LeaguePackets.Game
         public bool Physical { get; set; }
         public bool Magical { get; set; }
         public bool StopShieldFade { get; set; }
-        public float Ammount { get; set; }
+        public float Amount { get; set; }
 
         protected override void ReadBody(ByteReader reader)
         {
@@ -23,7 +23,7 @@ namespace LeaguePackets.Game
             this.Physical = (bitfield & 1) != 0;
             this.Magical = (bitfield & 2) != 0;
             this.StopShieldFade = (bitfield & 4) != 0;
-            this.Ammount = reader.ReadFloat();
+            this.Amount = reader.ReadFloat();
         }
         protected override void WriteBody(ByteWriter writer)
         {
@@ -35,7 +35,7 @@ namespace LeaguePackets.Game
             if (StopShieldFade)
                 bitfield |= 4;
             writer.WriteByte(bitfield);
-            writer.WriteFloat(Ammount);
+            writer.WriteFloat(Amount);
         }
     }
 }
