@@ -48,8 +48,8 @@ namespace LeaguePackets.Game
                     {
                         throw new IOException("Packet too big!");
                     }
-                    writer.WriteUInt16((ushort)data.Length);
-                    writer.WriteBytes(data);
+                    writer2.WriteUInt16((ushort)data.Length);
+                    writer2.WriteBytes(data);
                 }
                 var buffer = writer2.GetBytes();
                 if (buffer.Length > 0x1FFF)
