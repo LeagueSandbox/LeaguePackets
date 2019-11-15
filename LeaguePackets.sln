@@ -1,15 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27703.2018
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29509.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaguePackets", "LeaguePackets\LeaguePackets.csproj", "{6B86971B-1812-406E-ABD1-3B4B78565642}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LeaguePackets", "LeaguePackets\LeaguePackets.csproj", "{6B86971B-1812-406E-ABD1-3B4B78565642}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaguePacketsTests", "LeaguePacketsTests\LeaguePacketsTests.csproj", "{3B2A0A27-E234-41D3-A0BC-8074D48979F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LeaguePacketsTests", "LeaguePacketsTests\LeaguePacketsTests.csproj", "{3B2A0A27-E234-41D3-A0BC-8074D48979F3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaguePacketsSender", "LeaguePacketsSender\LeaguePacketsSender.csproj", "{00DD9684-9411-448D-B02B-521FB046A9C0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LeaguePacketsSender", "LeaguePacketsSender\LeaguePacketsSender.csproj", "{00DD9684-9411-448D-B02B-521FB046A9C0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LeaguePacketsSerializer", "LeaguePacketsSerializer\LeaguePacketsSerializer.csproj", "{D1A7DEC8-A486-4E06-BB54-2A3E52A489C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LeaguePacketsSerializer", "LeaguePacketsSerializer\LeaguePacketsSerializer.csproj", "{D1A7DEC8-A486-4E06-BB54-2A3E52A489C8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
