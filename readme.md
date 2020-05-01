@@ -1,4 +1,4 @@
-League of legends seasson 4 packet structures.
+League of Legends season 4 packet structures.
 Testapp/sample in LeaguePacketsSender project
 
-Improted from https://github.com/moonshadow565/LeaguePackets
+Imported from https://github.com/moonshadow565/LeaguePackets
