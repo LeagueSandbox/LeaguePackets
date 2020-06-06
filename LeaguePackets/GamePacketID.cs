@@ -32,7 +32,7 @@ namespace LeaguePackets
         NPC_UpgradeSpellAns = 0x15,                     //DONE?
         C2S_Ping_Load_Info = 0x16,                      //DONE?
         ChangeSlotSpellData = 0x17,                     //DONE?
-        NPC_MessageToClient_Broadcast = 0x18,                     //DONE?
+        NPC_MessageToClient_Broadcast = 0x18,           //DONE?
         DisplayFloatingText = 0x19,                     //DONE?
         Basic_Attack_Pos = 0x1A,                        //DONE?
         NPC_ForceDead = 0x1B,                           //DONE?
@@ -61,7 +61,7 @@ namespace LeaguePackets
         SetFadeOut_Pop = 0x32,                          //DONE?
         RemoveRegion = 0x33,                            //DONE?
         NPC_InstantStop_Attack = 0x34,                  //DONE?
-        OnLeaveLocalVisiblityClient = 0x35,             //DONE?
+        OnLeaveLocalVisibilityClient = 0x35,            //DONE?
         S2C_ShowObjectiveText = 0x36,                   //DONE?
         CHAR_SpawnPet = 0x37,                           //DONE?
         FX_Kill = 0x38,                                 //DONE?
@@ -89,7 +89,7 @@ namespace LeaguePackets
         SPM_HierarchicalMemoryUpdate = 0x4E,            //Unused
         S2C_ToggleUIHighlight = 0x4F,                   //DONE?
         S2C_FaceDirection = 0x50,                       //DONE?
-        OnLeaveVisiblityClient = 0x51,                  //DONE?
+        OnLeaveVisibilityClient = 0x51,                 //DONE?
         C2S_ClientReady = 0x52,                         //DONE?
         SetItem = 0x53,                                 //DONE?
         SynchVersionS2C = 0x54,                         //DONE?
@@ -166,7 +166,7 @@ namespace LeaguePackets
         S2C_ToggleInputLockFlag = 0x9B,                 //DONE?
         C2S_SoftReconnect = 0x9C,                       //DONE?
         S2C_CreateTurret = 0x9D,                        //DONE?
-        NPC_Die_Broadcast = 0x9E,                                 //DONE?
+        NPC_Die_Broadcast = 0x9E,                        //DONE?
         UseItemAns = 0x9F,                              //DONE?
         S2C_ShowAuxiliaryText = 0xA0,                   //DONE?
         PausePacket = 0xA1,                             //DONE?
@@ -182,7 +182,7 @@ namespace LeaguePackets
         S2C_SetFoWStatus = 0xAB,                        //DONE?
         ReloadScripts = 0xAC,                           //DONE?
         Cheat = 0xAD,                                   //DONE?
-        OnEnterLocalVisiblityClient = 0xAE,             //DONE?
+        OnEnterLocalVisibilityClient = 0xAE,            //DONE?
         SendSelectedObjID = 0xAF,                       //DONE?
         S2C_PlayAnimation = 0xB0,                       //DONE?
         S2C_RefreshAuxiliaryText = 0xB1,                //DONE?
@@ -194,7 +194,7 @@ namespace LeaguePackets
         NPC_BuffAdd2 = 0xB7,                            //DONE?
         S2C_OpenAFKWarningMessage = 0xB8,               //DONE
         WaypointList = 0xB9,                            //DONE?
-        OnEnterVisiblityClient = 0xBA,                  //DONE?
+        OnEnterVisibilityClient = 0xBA,                 //DONE?
         S2C_AddDebugObject = 0xBB,                      //unused
         S2C_DisableHUDForEndOfGame = 0xBC,              //DONE?
         SynchVersionC2S = 0xBD,                         //DONE?
@@ -232,10 +232,10 @@ namespace LeaguePackets
         Unused221 = 0xDD,                               //Unused
         Unused222 = 0xDE,                               //Unused
         Unused223 = 0xDF,                               //Unused
-        S2C_OnEnterTeamVisiblity = 0xE0,                //DONE?
-        S2C_OnLeaveTeamVisiblity = 0xE1,                //DONE?
-        S2C_FX_OnEnterTeamVisiblity = 0xE2,             //Unused?
-        S2C_FX_OnLeaveTeamVisiblity = 0xE3,             //DONE?
+        S2C_OnEnterTeamVisibility = 0xE0,               //DONE?
+        S2C_OnLeaveTeamVisibility = 0xE1,               //DONE?
+        S2C_FX_OnEnterTeamVisibility = 0xE2,            //Unused?
+        S2C_FX_OnLeaveTeamVisibility = 0xE3,            //DONE?
         ReplayOnly_GoldEarned = 0xE4,                   //DONE?
         S2C_CloseClient = 0xE5,                         //DONE?
         C2S_SpellChargeUpdateReq = 0xE6,                //DONE?

@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace LeaguePackets.Game
 {
-    public class S2C_FX_OnLeaveTeamVisiblity : GamePacket // 0xE3
+    public class S2C_FX_OnEnterTeamVisibility : GamePacket, IUnusedPacket // 0xE2
     {
-        public override GamePacketID ID => GamePacketID.S2C_FX_OnLeaveTeamVisiblity;
+        public override GamePacketID ID => GamePacketID.S2C_FX_OnEnterTeamVisibility;
         public uint NetID { get; set; }
         public byte VisibilityTeam { get; set; }
 
