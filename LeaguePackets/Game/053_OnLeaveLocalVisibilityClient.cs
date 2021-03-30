@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace LeaguePackets.Game
 {
-    public class OnLeaveVisiblityClient : GamePacket // 0x51
+    public class OnLeaveLocalVisibilityClient : GamePacket // 0x35
     {
-        public override GamePacketID ID => GamePacketID.OnLeaveVisiblityClient;
+        public override GamePacketID ID => GamePacketID.OnLeaveLocalVisibilityClient;
 
         protected override void ReadBody(ByteReader reader) 
         {

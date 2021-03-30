@@ -9,9 +9,9 @@ using LeaguePackets.Game.Common;
 
 namespace LeaguePackets.Game
 {
-    public class OnEnterLocalVisiblityClient : GamePacket, IGamePacketsList // 0xAE
+    public class OnEnterLocalVisibilityClient : GamePacket, IGamePacketsList // 0xAE
     {
-        public override GamePacketID ID => GamePacketID.OnEnterLocalVisiblityClient;
+        public override GamePacketID ID => GamePacketID.OnEnterLocalVisibilityClient;
         public List<GamePacket> Packets { get; set; } = new List<GamePacket>();
 
         public float MaxHealth { get; set; }

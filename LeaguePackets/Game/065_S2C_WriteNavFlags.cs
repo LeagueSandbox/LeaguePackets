@@ -13,7 +13,7 @@ namespace LeaguePackets.Game
     {
         public override GamePacketID ID => GamePacketID.S2C_WriteNavFlags;
         public int SyncID { get; set; }
-        public List<NavFlagCricle> NavFlagCricles { get; set; } = new List<NavFlagCricle>();
+        public List<NavFlagCircle> NavFlagCircles { get; set; } = new List<NavFlagCircle>();
 
         protected override void ReadBody(ByteReader reader)
         {
@@ -22,20 +22,20 @@ namespace LeaguePackets.Game
             int size = reader.ReadInt16();
             for (var i = 0; i < size; i += 16)
             {
-                this.NavFlagCricles.Add(reader.ReadNavFlagCricle());
+                this.NavFlagCircles.Add(reader.ReadNavFlagCircle());
             }
         }
         protected override void WriteBody(ByteWriter writer)
         {
             writer.WriteInt32(SyncID);
-            int size = NavFlagCricles.Count * 16;
+            int size = NavFlagCircles.Count * 16;
             if(size > 0xFFFF)
             {
                 throw new IOException("NavFlagCircles list too big!");   
             }
-            for (int i = 0; i < NavFlagCricles.Count; i++)
+            for (int i = 0; i < NavFlagCircles.Count; i++)
             {
-                writer.WriteNavFlagCricle(NavFlagCricles[i]);
+                writer.WriteNavFlagCircle(NavFlagCircles[i]);
             }
         }
     }

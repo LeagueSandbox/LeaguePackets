@@ -3,7 +3,7 @@ using System.Numerics;
 
 namespace LeaguePackets.Game.Common
 {
-    public class NavFlagCricle
+    public class NavFlagCircle
     {
         public Vector2 Position { get; set; }
         public float Radius { get; set; }
@@ -12,20 +12,20 @@ namespace LeaguePackets.Game.Common
 
     public static class NavFlagCircleExtension
     {
-        public static NavFlagCricle ReadNavFlagCricle(this ByteReader reader)
+        public static NavFlagCircle ReadNavFlagCircle(this ByteReader reader)
         {
-            var data = new NavFlagCricle();
+            var data = new NavFlagCircle();
             data.Position = reader.ReadVector2();
             data.Radius = reader.ReadFloat();
             data.Flags = reader.ReadUInt32();
             return data;
         }
 
-        public static void WriteNavFlagCricle(this ByteWriter writer, NavFlagCricle data)
+        public static void WriteNavFlagCircle(this ByteWriter writer, NavFlagCircle data)
         {
             if(data == null)
             {
-                data = new NavFlagCricle();
+                data = new NavFlagCircle();
             }
             writer.WriteVector2(data.Position);
             writer.WriteFloat(data.Radius);

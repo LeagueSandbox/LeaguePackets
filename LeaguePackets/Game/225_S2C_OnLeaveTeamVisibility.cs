@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace LeaguePackets.Game
 {
-    public class S2C_OnEnterTeamVisiblity : GamePacket // 0xE0
+    public class S2C_OnLeaveTeamVisibility : GamePacket // 0xE1
     {
-        public override GamePacketID ID => GamePacketID.S2C_OnEnterTeamVisiblity;
+        public override GamePacketID ID => GamePacketID.S2C_OnLeaveTeamVisibility;
         public byte VisibilityTeam { get; set; }
 
         protected override void ReadBody(ByteReader reader)

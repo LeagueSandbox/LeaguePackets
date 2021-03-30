@@ -17,9 +17,9 @@ namespace LeaguePackets.Game
         public float MagicalAndPhysical { get; set; }
     }
 
-    public class OnEnterVisiblityClient : GamePacket, IGamePacketsList // 0xBA
+    public class OnEnterVisibilityClient : GamePacket, IGamePacketsList // 0xBA
     {
-        public override GamePacketID ID => GamePacketID.OnEnterVisiblityClient;
+        public override GamePacketID ID => GamePacketID.OnEnterVisibilityClient;
         public List<GamePacket> Packets { get; set; } = new List<GamePacket>();
 
         public List<ItemData> Items { get; set; } = new List<ItemData>();
