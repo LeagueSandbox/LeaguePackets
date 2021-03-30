@@ -166,7 +166,7 @@ namespace LeaguePackets
         S2C_ToggleInputLockFlag = 0x9B,                 //DONE?
         C2S_SoftReconnect = 0x9C,                       //DONE?
         S2C_CreateTurret = 0x9D,                        //DONE?
-        NPC_Die_Broadcast = 0x9E,                        //DONE?
+        NPC_Die_Broadcast = 0x9E,                       //DONE?
         UseItemAns = 0x9F,                              //DONE?
         S2C_ShowAuxiliaryText = 0xA0,                   //DONE?
         PausePacket = 0xA1,                             //DONE?
