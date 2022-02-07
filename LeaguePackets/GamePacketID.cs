@@ -53,7 +53,7 @@ namespace LeaguePackets
         AvatarInfo_Server = 0x2A,                       //DONE?
         DampenerSwitchStates = 0x2B,                    //DONE?
         World_SendCamera_Server_Acknologment = 0x2C,    //DONE?
-        S2C_ModifyDebugCircleRadius = 0x2D,             //unused 
+        S2C_ModifyDebugCircleRadius = 0x2D,             //Unused 
         World_SendCamera_Server = 0x2E,                 //DONE?
         HeroReincarnateAlive = 0x2F,                    //DONE?
         NPC_BuffReplace = 0x30,                         //DONE?
@@ -63,7 +63,7 @@ namespace LeaguePackets
         NPC_InstantStop_Attack = 0x34,                  //DONE?
         OnLeaveLocalVisibilityClient = 0x35,            //DONE?
         S2C_ShowObjectiveText = 0x36,                   //DONE?
-        CHAR_SpawnPet = 0x37,                           //DONE?
+        CHAR_SpawnPet = 0x37,                           //TODO: Unknowns
         FX_Kill = 0x38,                                 //DONE?
         NPC_UpgradeSpellReq = 0x39,                     //DONE?
         UseObjectC2S = 0x3A,                            //DONE?
@@ -84,7 +84,7 @@ namespace LeaguePackets
         C2S_PlayVOCommand = 0x49,                       //DONE?
         HeroReincarnate = 0x4A,                         //DONE?
         C2S_OnScoreBoardOpened = 0x4B,                  //DONE?
-        S2C_CreateHero = 0x4C,                          //TODO: unknowns
+        S2C_CreateHero = 0x4C,                          //TODO: Unknowns
         SPM_AddMemoryListener = 0x4D,                   //Unused
         SPM_HierarchicalMemoryUpdate = 0x4E,            //Unused
         S2C_ToggleUIHighlight = 0x4F,                   //DONE?
@@ -96,7 +96,7 @@ namespace LeaguePackets
         S2C_HandleTipUpdate = 0x55,                     //DONE?
         C2S_StatsUpdateReq = 0x56,                      //DONE
         C2S_MapPing = 0x57,                             //DONE?
-        S2C_RemoveDebugObject = 0x58,                   //unused
+        S2C_RemoveDebugObject = 0x58,                   //Unused
         S2C_CreateUnitHighlight = 0x59,                 //DONE?
         S2C_DestroyClientMissile = 0x5A,                //DONE?
         S2C_SetSpellLevel = 0x5B,                       //DONE?
@@ -142,7 +142,7 @@ namespace LeaguePackets
         WaypointListHeroWithSpeed = 0x83,               //DONE?
         S2C_SetInputLockFlag = 0x84,                    //DONE?
         CHAR_SetCooldown = 0x85,                        //DONE?
-        CHAR_CancelTargetingReticle = 0x86,             //TODO: unknowns
+        CHAR_CancelTargetingReticle = 0x86,             //TODO: Unknowns
         FX_Create_Group = 0x87,                         //DONE?
         S2C_QueryStatusAns = 0x88,                      //DONE?
         Building_Die = 0x89,                            //DONE?
@@ -158,9 +158,9 @@ namespace LeaguePackets
         SetPARState = 0x93,                             //DONE?
         NPC_BuffRemoveGroup = 0x94,                     //DONE?
         S2C_Ping_Load_Info = 0x95,                      //DONE?
-        S2C_ChangeCharacterVoice = 0x96,                //TODO: unknowns
+        S2C_ChangeCharacterVoice = 0x96,                //TODO: Unknowns
         S2C_ChangeCharacterData = 0x97,                 //DONE?
-        S2C_Exit = 0x98,                                //TODO: unknowns
+        S2C_Exit = 0x98,                                //TODO: Unknowns
         SPM_RemoveBBProfileListener = 0x99,             //Unused
         NPC_CastSpellReq = 0x9A,                        //DONE?
         S2C_ToggleInputLockFlag = 0x9B,                 //DONE?
@@ -189,13 +189,13 @@ namespace LeaguePackets
         SetFadeOut_Push = 0xB2,                         //DONE?
         S2C_OpenTutorialPopup = 0xB3,                   //DONE?
         S2C_RemoveUnitHighlight = 0xB4,                 //DONE?
-        NPC_CastSpellAns = 0xB5,                        //TODO: unknowns
+        NPC_CastSpellAns = 0xB5,                        //TODO: Unknowns
         SPM_HierarchicalBBProfileUpdate = 0xB6,         //Unused
         NPC_BuffAdd2 = 0xB7,                            //DONE?
         S2C_OpenAFKWarningMessage = 0xB8,               //DONE
         WaypointList = 0xB9,                            //DONE?
         OnEnterVisibilityClient = 0xBA,                 //DONE?
-        S2C_AddDebugObject = 0xBB,                      //unused
+        S2C_AddDebugObject = 0xBB,                      //Unused
         S2C_DisableHUDForEndOfGame = 0xBC,              //DONE?
         SynchVersionC2S = 0xBD,                         //DONE?
         C2S_CharSelected = 0xBE,                        //DONE?
@@ -239,15 +239,15 @@ namespace LeaguePackets
         ReplayOnly_GoldEarned = 0xE4,                   //DONE?
         S2C_CloseClient = 0xE5,                         //DONE?
         C2S_SpellChargeUpdateReq = 0xE6,                //DONE?
-        S2C_ModifyDebugText = 0xE7,                     //unused
-        S2C_SetDebugHidden = 0xE8,                      //unused
+        S2C_ModifyDebugText = 0xE7,                     //Unused
+        S2C_SetDebugHidden = 0xE8,                      //Unused
         S2C_ActivateMinionCamp = 0xE9,                  //DONE?
         C2S_SpectatorDataReq = 0xEA,                    //DONE?
         S2C_SpectatorMetaData = 0xEB,                   //DONE?
         S2C_SpectatorDataChunkInfo = 0xEC,              //DONE?
         S2C_SpectatorDataChunk = 0xED,                  //DONE?
         S2C_ChangeMissileTarget = 0xEE,                 //DONE?
-        S2C_MarkOrSweepForSoftReconnect = 0xEF,         //TODO: unknowns
+        S2C_MarkOrSweepForSoftReconnect = 0xEF,         //TODO: Unknowns
         S2C_SetShopEnabled = 0xF0,                      //DONE
         S2C_CreateFollowerObject = 0xF1,                //DONE?
         S2C_ReattachFollowerObject = 0xF2,              //DONE?
@@ -276,7 +276,7 @@ namespace LeaguePackets
         NPC_BuffUpdateNumCounter = 0x109,               //DONE?
         C2S_UndoItemReq = 0x10A,                        //DONE?
         S2C_SetUndoEnabled = 0x10B,                     //DONE?
-        S2C_SetInventory_Broadcast = 0x10C,                       //DONE?
+        S2C_SetInventory_Broadcast = 0x10C,             //DONE?
         S2C_ChangeMissileSpeed = 0x10D,                 //DONE?
         S2C_SetCanSurrender = 0x10E,                    //DONE?
         S2C_UnitSetLookAt = 0x10F,                      //DONE?
@@ -291,7 +291,7 @@ namespace LeaguePackets
         S2C_UpdateSpellToggle = 0x118,                  //DONE?
         S2C_UpdateBounceMissile = 0x119,                //DONE?
         S2C_DebugLogGoldSources = 0x11A,                //DONE?
-        C2S_CheatLogGoldSources = 0x11B,                //unused
+        C2S_CheatLogGoldSources = 0x11B,                //Unused
         S2C_ShopItemSubstitutionSet = 0x11C,            //DONE?
         S2C_ShopItemSubstitutionClear = 0x11D,          //DONE?
         S2C_ResetClient = 0x11E,                        //Unused
@@ -308,9 +308,9 @@ namespace LeaguePackets
         S2C_StartSpellTargeter = 0x129,                 //4.18+
         S2C_StopSpellTargeter = 0x12A,                  //4.18+
         S2C_CameraLock = 0x12B,                         //4.18+
-        S2C_TeamUpdateDragonBuffCount = 0x12C,                              //4.18+
+        S2C_TeamUpdateDragonBuffCount = 0x12C,          //4.18+
         S2C_SetFadeOut = 0x12D,                         //4.18+
-        AddConeRegion = 0x12E,                    //4.18+
+        AddConeRegion = 0x12E,                          //4.18+
         S2C_UnlockAnimation = 0x12F,                    //4.18+
     }
 }
