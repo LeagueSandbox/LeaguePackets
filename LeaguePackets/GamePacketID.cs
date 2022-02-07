@@ -8,9 +8,9 @@ namespace LeaguePackets
 {
     public enum GamePacketID : uint
     {
-        Dummy = 0x0,                                    //DONE!
+        Dummy = 0x0,                                    //DONE
         SPM_HierarchicalProfilerUpdate = 0x1,           //Unused
-        S2C_DisplayLocalizedTutorialChatText = 0x2,     //DONE!
+        S2C_DisplayLocalizedTutorialChatText = 0x2,     //DONE
         Barrack_SpawnUnit = 0x3,                        //DONE?
         S2C_SwitchNexusesToOnIdleParticles = 0x4,       //DONE?
         C2S_TutorialAudioEventFinished = 0x5,           //DONE?
@@ -24,7 +24,7 @@ namespace LeaguePackets
         S2C_ReplaceObjectiveText = 0xD,                 //DONE?
         S2C_CloseShop = 0xE,                            //DONE?
         S2C_Reconnect = 0xF,                            //DONE?
-        UnitAddEXP = 0x10,                              //DONE!                              
+        UnitAddEXP = 0x10,                              //DONE
         S2C_EndSpawn = 0x11,                            //DONE?
         SetFrequency = 0x12,                            //DONE?
         S2C_BotAI = 0x13,                               //DONE?
@@ -53,7 +53,7 @@ namespace LeaguePackets
         AvatarInfo_Server = 0x2A,                       //DONE?
         DampenerSwitchStates = 0x2B,                    //DONE?
         World_SendCamera_Server_Acknologment = 0x2C,    //DONE?
-        S2C_ModifyDebugCircleRadius = 0x2D,             //Unused 
+        S2C_ModifyDebugCircleRadius = 0x2D,             //Unused
         World_SendCamera_Server = 0x2E,                 //DONE?
         HeroReincarnateAlive = 0x2F,                    //DONE?
         NPC_BuffReplace = 0x30,                         //DONE?
@@ -63,7 +63,7 @@ namespace LeaguePackets
         NPC_InstantStop_Attack = 0x34,                  //DONE?
         OnLeaveLocalVisibilityClient = 0x35,            //DONE?
         S2C_ShowObjectiveText = 0x36,                   //DONE?
-        CHAR_SpawnPet = 0x37,                           //TODO: Unknowns
+        CHAR_SpawnPet = 0x37,                           //DONE?
         FX_Kill = 0x38,                                 //DONE?
         NPC_UpgradeSpellReq = 0x39,                     //DONE?
         UseObjectC2S = 0x3A,                            //DONE?

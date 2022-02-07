@@ -33,7 +33,7 @@ namespace LeaguePackets.Game
         public float TimeSinceDeath { get; set; }
 
         public CreateHeroDeath CreateHeroDeath { get; set; }
-        // FIXME: fix those unknowns
+        // FIXME: fix these unknowns
         public bool Unknown1 { get; set; } // something with scripts
         public bool Unknown2 { get; set; } // something with spawn
 
