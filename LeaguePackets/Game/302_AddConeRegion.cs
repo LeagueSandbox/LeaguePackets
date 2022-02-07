@@ -9,9 +9,9 @@ using System.Numerics;
 
 namespace LeaguePackets.Game
 {
-    public class UNK_0x12E_AddRegion : GamePacket // 0x12E
+    public class AddConeRegion : GamePacket // 0x12E
     {
-        public override GamePacketID ID => GamePacketID.UNK_0x12E_AddRegion;
+        public override GamePacketID ID => GamePacketID.AddConeRegion;
         public uint TeamID { get; set; }
         public int RegionType { get; set; }
         public int ClientID { get; set; }
@@ -31,8 +31,8 @@ namespace LeaguePackets.Game
 
         public float BaseRadius { get; set; }
 
-        // FIXME:  unknowns
-        public float Unknown1 { get; set; }
+        public float ConeAngle { get; set; }
+        // FIXME: unknowns
         public float Unknown2 { get; set; }
         public float Unknown3 { get; set; }
 
@@ -59,7 +59,7 @@ namespace LeaguePackets.Game
 
             this.BaseRadius = reader.ReadFloat();
 
-            this.Unknown1 = reader.ReadFloat();
+            this.ConeAngle = reader.ReadFloat();
             this.Unknown2 = reader.ReadFloat();
             this.Unknown3 = reader.ReadFloat();
         }
@@ -95,7 +95,7 @@ namespace LeaguePackets.Game
 
             writer.WriteFloat(BaseRadius);
 
-            writer.WriteFloat(Unknown1);
+            writer.WriteFloat(ConeAngle);
             writer.WriteFloat(Unknown2);
             writer.WriteFloat(Unknown3);
         }

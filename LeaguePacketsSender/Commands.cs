@@ -16,7 +16,7 @@ namespace LeaguePacketsSender
     {
         public static string LeaveVision(LeagueServer server, int client, string args)
         {
-            var packet = new OnLeaveVisiblityClient();
+            var packet = new OnLeaveVisibilityClient();
             packet.SenderNetID = 0x40000001;
             server.SendEncrypted(client, ChannelID.Broadcast, packet);
             return "LeaveVision?";
@@ -24,7 +24,7 @@ namespace LeaguePacketsSender
 
         public static string EnterVision(LeagueServer server, int client, string args)
         {
-            var packet = new OnEnterVisiblityClient();
+            var packet = new OnEnterVisibilityClient();
             packet.SenderNetID = 0x40000001;
             packet.MovementData = new MovementDataStop
             {

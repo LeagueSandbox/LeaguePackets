@@ -308,9 +308,9 @@ namespace LeaguePackets
         S2C_StartSpellTargeter = 0x129,                 //4.18+
         S2C_StopSpellTargeter = 0x12A,                  //4.18+
         S2C_CameraLock = 0x12B,                         //4.18+
-        UNK_0x12C = 0x12C,                              //4.18+
+        S2C_TeamUpdateDragonBuffCount = 0x12C,                              //4.18+
         S2C_SetFadeOut = 0x12D,                         //4.18+
-        UNK_0x12E_AddRegion = 0x12E,                    //4.18+
+        AddConeRegion = 0x12E,                    //4.18+
         S2C_UnlockAnimation = 0x12F,                    //4.18+
     }
 }
