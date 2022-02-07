@@ -29,7 +29,8 @@ namespace LeaguePackets.Game
         public byte LookAtType { get; set; }
         public Vector3 LookAtPosition { get; set; }
         public List<KeyValuePair<byte, int>> BuffCount { get; set; } = new List<KeyValuePair<byte, int>>();
-        public bool UnknownIsHero { get; set; }
+        // Function unknown.
+        public bool IsHero { get; set; }
         public MovementData MovementData { get; set; } = new MovementDataNone();
 
         protected override void ReadBody(ByteReader reader)

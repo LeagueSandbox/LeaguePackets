@@ -27,8 +27,7 @@ namespace LeaguePackets.Game
         public uint CloneID { get; set; }
         public bool CloneInventory { get; set; }
         public bool ShowMinimapIconIfClone { get; set; }
-        //FIXME: figure those out:
-        public bool Unknown4 { get; set; }
+        public bool DisallowPlayerControl { get; set; }
         public bool DoFade { get; set; }
         string AIscript { get; set; }
 

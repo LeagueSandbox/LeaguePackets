@@ -8,9 +8,9 @@ using System.Threading.Tasks;
 
 namespace LeaguePackets.Game
 {
-    public class Unused223 : GamePacket, IUnusedPacket // 0xDF
+    public class UNK_0xDF : GamePacket // 0xDF
     {
-        public override GamePacketID ID => GamePacketID.Unused223;
+        public override GamePacketID ID => GamePacketID.Unknown_223;
 
         protected override void ReadBody(ByteReader reader) 
         {

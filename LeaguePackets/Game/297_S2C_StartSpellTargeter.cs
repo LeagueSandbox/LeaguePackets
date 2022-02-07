@@ -12,18 +12,18 @@ namespace LeaguePackets.Game
     {
         public override GamePacketID ID => GamePacketID.S2C_StartSpellTargeter;
         public byte Slot { get; set; }
-        public float Unknonw1 { get; set; }
+        // Amount of time to check for target.
+        public float TargetTime { get; set; }
 
         protected override void ReadBody(ByteReader reader)
         {
-
             Slot = (byte)reader.ReadUInt32();
-            Unknonw1 = reader.ReadFloat();
+            TargetTime = reader.ReadFloat();
         }
         protected override void WriteBody(ByteWriter writer)
         {
             writer.WriteUInt32((uint)Slot);
-            writer.WriteFloat(Unknonw1);
+            writer.WriteFloat(TargetTime);
         }
     }
 }
