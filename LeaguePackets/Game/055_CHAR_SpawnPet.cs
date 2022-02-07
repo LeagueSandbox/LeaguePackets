@@ -51,7 +51,7 @@ namespace LeaguePackets.Game
             byte bitfield = reader.ReadByte();
             this.CloneInventory = (bitfield & 1) != 0;
             this.ShowMinimapIconIfClone = (bitfield & 2) != 0;
-            this.Unknown4 = (bitfield & 4) != 0;
+            this.DisallowPlayerControl = (bitfield & 4) != 0;
             this.DoFade = (bitfield & 8) != 0;
 
             this.AIscript = reader.ReadFixedStringLast(32);
@@ -76,7 +76,7 @@ namespace LeaguePackets.Game
                 bitfield |= 1;
             if (ShowMinimapIconIfClone)
                 bitfield |= 2;
-            if (Unknown4)
+            if (DisallowPlayerControl)
                 bitfield |= 4;
             if (DoFade)
                 bitfield |= 8;
