@@ -99,7 +99,7 @@ namespace LeaguePackets.Game
                 BuffCount.Add(new KeyValuePair<byte, int>(slot, count));
             }
 
-            UnknownIsHero = reader.ReadBool();
+            IsHero = reader.ReadBool();
 
             if(reader.BytesLeft < 5)
             {
@@ -187,7 +187,7 @@ namespace LeaguePackets.Game
                 writer.WriteInt32(kvp.Value);
             }
 
-            writer.WriteBool(UnknownIsHero);
+            writer.WriteBool(IsHero);
 
             writer.WriteMovementDataWithHeader(MovementData);
         }
