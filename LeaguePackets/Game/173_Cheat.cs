@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace LeaguePackets.Game
 {
-    public class Cheat : GamePacket, IUnusedPacket // 0xAD
+    public class Cheat : GamePacket // 0xAD
     {
         public override GamePacketID ID => GamePacketID.Cheat;
 

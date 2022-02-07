@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace LeaguePackets.Game
 {
-    public class S2C_SetDebugHidden : GamePacket, IUnusedPacket // 0xE8
+    public class S2C_SetDebugHidden : GamePacket // 0xE8
     {
         public override GamePacketID ID => GamePacketID.S2C_SetDebugHidden;
         public int ObjectID { get; set; }

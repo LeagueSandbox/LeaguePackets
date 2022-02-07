@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace LeaguePackets.Game
 {
-    public class SPM_HierarchicalBBProfileUpdate : GamePacket, IUnusedPacket // 0xB6
+    public class SPM_HierarchicalBBProfileUpdate : GamePacket // 0xB6
     {
         public override GamePacketID ID => GamePacketID.SPM_HierarchicalBBProfileUpdate;
 

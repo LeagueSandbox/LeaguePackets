@@ -142,7 +142,7 @@ namespace LeaguePackets
         WaypointListHeroWithSpeed = 0x83,               //DONE?
         S2C_SetInputLockFlag = 0x84,                    //DONE?
         CHAR_SetCooldown = 0x85,                        //DONE?
-        CHAR_CancelTargetingReticle = 0x86,             //TODO: Unknowns
+        CHAR_CancelTargetingReticle = 0x86,             //TODO: Unknowns in ExtraBytes
         FX_Create_Group = 0x87,                         //DONE?
         S2C_QueryStatusAns = 0x88,                      //DONE?
         Building_Die = 0x89,                            //DONE?
@@ -231,7 +231,7 @@ namespace LeaguePackets
         S2C_InteractiveMusicCommand = 0xDC,             //DONE?
         Unused221 = 0xDD,                               //Unused
         Unused222 = 0xDE,                               //Unused
-        Unused223 = 0xDF,                               //Unused
+        Unknown_223 = 0xDF,                             //TODO: Unknowns in ExtraBytes
         S2C_OnEnterTeamVisibility = 0xE0,               //DONE?
         S2C_OnLeaveTeamVisibility = 0xE1,               //DONE?
         S2C_FX_OnEnterTeamVisibility = 0xE2,            //Unused?

@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace LeaguePackets.Game
 {
-    public class SPM_AddListener : GamePacket, IUnusedPacket // 0x91
+    public class SPM_AddListener : GamePacket // 0x91
     {
         public override GamePacketID ID => GamePacketID.SPM_AddListener;
 
