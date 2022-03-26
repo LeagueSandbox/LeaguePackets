@@ -62,6 +62,7 @@ namespace LeaguePackets.Game
                 item.ItemsInSlot = reader.ReadByte();
                 item.SpellCharges = reader.ReadByte();
                 item.ItemID = reader.ReadUInt32();
+                Items.Add(item);
             }
 
             bool hasShield = reader.ReadBool();
