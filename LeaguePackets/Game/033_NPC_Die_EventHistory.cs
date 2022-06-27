@@ -35,8 +35,10 @@ namespace LeaguePackets.Game
             writer.WriteUInt32(KillerNetID);
             writer.WriteFloat(Duration);
             writer.WriteInt32(Entries.Count);
-            foreach (var ev in Entries)
+            //foreach (var ev in Entries)
+            for (int i = Entries.Count - 1; i >= 0; i--)
             {
+                var ev = Entries[i];
                 writer.WriteEventHistoryEntry(ev);
             }
         }

@@ -2,17 +2,9 @@
 
 namespace LeaguePackets.Game.Events
 {
-    public class ArgsHeal : ArgsBase
+    public class ArgsHeal : ArgsForClient
     {
-        public uint ScriptNameHash { get; set; }
-        public byte EventSource { get; set; }
-        // FIXME: new byte or EventSource bigger?
-        public byte Unknown { get; set; }
-        public uint SourceObjectNetID { get; set; }
         public float HealAmmount { get; set; }
-        public uint ParentScriptNameHash { get; set; }
-        public uint ParentCasterNetID { get; set; }
-        public ushort Bitfield { get; set; }
         public override void ReadArgs(ByteReader reader)
         {
             base.ReadArgs(reader);
