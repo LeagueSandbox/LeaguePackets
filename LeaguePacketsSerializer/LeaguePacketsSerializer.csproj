@@ -1,5 +1,4 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
-  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <TargetFramework>netcoreapp3.0</TargetFramework>
     <Platforms>AnyCPU;x64</Platforms>
@@ -23,13 +22,8 @@
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\LeaguePackets\LeaguePackets.csproj">
-      <Project>{6b86971b-1812-406e-abd1-3b4b78565642}</Project>
-      <Name>LeaguePackets</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Properties\" />
+    <ProjectReference Include="..\LeaguePackets\LeaguePackets.csproj" />
+    <ProjectReference Include="..\..\GameServerCore\GameServerCore.csproj" />
   </ItemGroup>
 
 </Project>
