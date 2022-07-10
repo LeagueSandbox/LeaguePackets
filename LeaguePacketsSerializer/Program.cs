@@ -58,14 +58,14 @@ namespace LeaguePacketsSerializer
         }
 
         private enum ReplicationType {
-            Unknown,
-            Turret,
-            Building,
-            Hero,
-            Monster,
-            Pet,
-            Minion,
-            LaneMinion
+            Unknown = 0,
+            Turret = 1,
+            Building = 2,
+            Hero = 3,
+            Monster = 4,
+            Pet = 4,
+            Minion = 4,
+            LaneMinion = 4
         }
         static Dictionary<uint, ReplicationType> replicationTypes =
            new Dictionary<uint, ReplicationType>();
@@ -99,6 +99,10 @@ namespace LeaguePacketsSerializer
             }
             else if(packet is OnEnterVisibilityClient vp)
             {
+                if(vp.SenderNetID >= 0xFF000000)
+                {
+                    replicationTypes[vp.SenderNetID] = ReplicationType.Building;
+                }
                 foreach(var subpacket in vp.Packets)
                 {
                     SetReplicationType(subpacket);
@@ -234,7 +238,7 @@ namespace LeaguePacketsSerializer
                 if(TryGetFloat(1, 0)) data["Stats.CurrentHealth"] = f; //mHP
                 if(TryGetUint(1, 1)) data["Stats.IsInvulnerable"] = u == 1u; //IsInvulnerable
                 if(TryGetUint(5, 0)) data["Stats.IsTargetable"] = u == 1u; //mIsTargetable
-                if(TryGetUint(3, 16)) data["Stats.IsTargetableToTeam"] = ((SpellDataFlags)u).ToString(); //mIsTargetableToTeamFlags
+                if(TryGetUint(5, 1)) data["Stats.IsTargetableToTeam"] = ((SpellDataFlags)u).ToString(); //mIsTargetableToTeamFlags
 
                 break;
                 
@@ -312,10 +316,10 @@ namespace LeaguePacketsSerializer
 
                 break;
                 
-                case ReplicationType.Monster:
-                case ReplicationType.Pet:
                 case ReplicationType.Minion:
-                case ReplicationType.LaneMinion:
+                //case ReplicationType.LaneMinion:
+                //case ReplicationType.Monster:
+                //case ReplicationType.Pet:
 
                 if(TryGetFloat(1, 0)) data["Stats.CurrentHealth"] = f; //mHP
                 if(TryGetFloat(1, 1)) data["Stats.HealthPoints.Total"] = f; //mMaxHP
