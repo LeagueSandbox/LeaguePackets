@@ -23,7 +23,6 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\LeaguePackets\LeaguePackets.csproj" />
-    <ProjectReference Include="..\..\GameServerCore\GameServerCore.csproj" />
   </ItemGroup>
 
 </Project>

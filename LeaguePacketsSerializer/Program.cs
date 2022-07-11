@@ -6,7 +6,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using LeaguePackets.Game;
-using GameServerCore.Enums;
+using GameServer.Enums;
 
 namespace LeaguePacketsSerializer
 {
